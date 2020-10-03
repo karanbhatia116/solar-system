@@ -224,6 +224,19 @@ const sketch = ({ context }) => {
 };
 
 canvasSketch(sketch, settings);
-var foot = document.createElement("p");
-p.innerText = "Solar system by hitgo00";
-document.body.appendChild(foot);
+var loader = new THREE.FontLoader();
+
+loader.load( 'fonts/helvetiker_regular.typeface.json', function ( font ) {
+
+	var geometry = new THREE.TextGeometry( 'Solar system by hitgo00', {
+		font: font,
+		size: 16,
+		height: 2,
+		curveSegments: 12,
+		bevelEnabled: true,
+		bevelThickness: 10,
+		bevelSize: 8,
+		bevelOffset: 0,
+		bevelSegments: 5
+	} );
+} );
