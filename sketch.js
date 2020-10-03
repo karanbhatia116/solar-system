@@ -224,3 +224,6 @@ const sketch = ({ context }) => {
 };
 
 canvasSketch(sketch, settings);
+var foot = document.createElement("p");
+p.innerText = "Solar system by hitgo00";
+document.body.appendChild(foot);
